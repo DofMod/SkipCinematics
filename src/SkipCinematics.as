@@ -3,6 +3,7 @@
 	import d2api.SystemApi;
 	import d2hooks.Cinematic;
 	import d2hooks.StopCinematic;
+	import enums.CinematicEnum;
 	import flash.display.Sprite;
 	
 	public class SkipCinematics extends Sprite
@@ -16,17 +17,14 @@
 		
 		public function onCinematic(param1:int):void
 		{
-			if (param1 == 2)
+			switch (param1)
 			{
-				this.sysApi.dispatchHook(StopCinematic);
-			}
-			else if (param1 == 4)
-			{
-				this.sysApi.dispatchHook(StopCinematic);
-			}
-			else if (param1 == 5)
-			{
-				this.sysApi.dispatchHook(StopCinematic);
+				case CinematicEnum.FRIGOST_CARRIER:
+				case CinematicEnum.SCARAPORT:
+				case CinematicEnum.MINE:
+					this.sysApi.dispatchHook(StopCinematic);
+					
+					break;
 			}
 		}
 	}
