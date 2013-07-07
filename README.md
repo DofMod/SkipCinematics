@@ -9,8 +9,11 @@ Download + Compile:
 -------------------
 
 1. Install Git
-2. git clone https://github.com/Dofus/SkipCinematics.git
-3. mxmlc -output SkipCinematics.swf -compiler.library-path+=./modules-library.swc -source-path src -keep-as3-metadata Api Module DevMode -- src/SkipCinematics.as
+2. git clone --recursive https://github.com/Dofus/SkipCinematics.git
+3. cd SkipCinematics/dmUtils/
+4. Compile dmUtils library (see README)
+5. cd ..
+3. mxmlc -output SkipCinematics.swf -compiler.library-path+=./modules-library.swc -compiler.library-path+=dmUtils/dmUtils.swc -source-path src -keep-as3-metadata Api Module DevMode -- src/SkipCinematics.as
 
 Installation:
 -------------
