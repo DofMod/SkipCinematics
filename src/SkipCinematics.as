@@ -6,18 +6,44 @@
 	import enums.CinematicEnum;
 	import flash.display.Sprite;
 	
+	/**
+	 * Main class of the module.
+	 * 
+	 * @author Yseult
+	 */
 	public class SkipCinematics extends Sprite
 	{
+		//::///////////////////////////////////////////////////////////
+		//::// Variables
+		//::///////////////////////////////////////////////////////////
+		
+		// APIs
 		public var sysApi:SystemApi;
 		
+		//::///////////////////////////////////////////////////////////
+		//::// Public methods
+		//::///////////////////////////////////////////////////////////
+		
+		/**
+		 * Entry point of the module.
+		 */
 		public function main():void
 		{
 			this.sysApi.addHook(Cinematic, onCinematic);
 		}
 		
-		public function onCinematic(param1:int):void
+		//::///////////////////////////////////////////////////////////
+		//::// Events
+		//::///////////////////////////////////////////////////////////
+		
+		/**
+		 * d2hook.Cinematic callback. Called when a cinematic start.
+		 * 
+		 * @param	cinematicId	Identifier of the cinematic.
+		 */
+		public function onCinematic(cinematicId:int):void
 		{
-			switch (param1)
+			switch (cinematicId)
 			{
 				case CinematicEnum.FRIGOST_CARRIER:
 				case CinematicEnum.SCARAPORT:
