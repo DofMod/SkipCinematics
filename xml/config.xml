@@ -68,16 +68,16 @@
 		<!-- Le template configCheckbox -->
 
 		<configCheckbox name="btn_cine_frigost_carrier"
-						text="Afficher les cinématiques des transporteurs de Frigost"
+						text="Desactiver les cinématiques des transporteurs de Frigost"
 						uri="[local.assets]tx_light_checkbox" />
 		<configCheckbox name="btn_cine_scaraport"
-						text="Afficher les cinématiques des scaeroports"
+						text="Desactiver les cinématiques des scaeroports"
 						uri="[local.assets]tx_light_checkbox" />
 		<configCheckbox name="btn_cine_mine"
-						text="Afficher les cinématiques de changement de mine"
+						text="Desactiver les cinématiques de changement de mine"
 						uri="[local.assets]tx_light_checkbox" />
 		<configCheckbox name="btn_cine_imp"
-						text="Afficher les cinématiques des transporteurs Brigandin"
+						text="Desactiver les cinématiques des transporteurs Brigandin"
 						uri="[local.assets]tx_light_checkbox" />
 	</Container>
 </Definition>
