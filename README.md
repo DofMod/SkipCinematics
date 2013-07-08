@@ -5,6 +5,8 @@ By *Yseult*
 
 Ce module permet de sauter les cinématiques.
 
+![Menu de configuration](http://imageshack.us/a/img832/5413/jzt3.png "Menu de configuration")
+
 Download + Compile:
 -------------------
 
