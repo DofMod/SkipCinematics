@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definition>
+
+	<!-- On importe le template, vous pouvez regarder dans ce fichier
+		 pour obtenir la liste des paramètre qu'accepte ce template  -->
+
+	<Import url="mod://Ankama_Config/ui/template/configCheckbox.xml" />
+
+	<!-- On créé les constantes de base -->
+
+	<Constants>
+		<Constant name="assets" value="[config.ui.skin]assets.swf|" />
+		<Constant name="css" value="[config.ui.skin]css/" />
+	</Constants>
+
+	<Container name="ctr_main">
+
+		<!-- Label de titre, sur l'image : "Liste des cinématiques" -->
+
+		<Label name="lbl_title1">
+			<Anchors>
+				<Anchor>
+					<AbsDimension x="0"
+								  y="0" />
+				</Anchor>
+			</Anchors>
+			<Size>
+				<AbsDimension x="750"
+							  y="20" />
+			</Size>
+			<text>Liste des cinématiques</text>
+			<css>[local.css]titleSmall.css</css>
+		</Label>
+
+		<!-- Texture de font -->
+
+		<Texture name="tx_bgForeground1">
+			<Anchors>
+				<Anchor relativeTo="lbl_title">
+					<AbsDimension x="0"
+								  y="30" />
+				</Anchor>
+			</Anchors>
+			<Size>
+				<AbsDimension x="780"
+							  y="145" />
+			</Size>
+			<autoGrid>true</autoGrid>
+			<uri>[local.assets]tx_darkBg</uri>
+		</Texture>
+
+		<!-- Le template configCheckbox se place en fonction du dernier élément,
+			 ici un container vide -->
+
+		<Container>
+			<Anchors>
+				<Anchor relativeTo="tx_bgForeground1">
+					<AbsDimension x="20"
+								  y="0" />
+				</Anchor>
+			</Anchors>
+			<Size>
+				<AbsDimension x="20"
+							  y="10" />
+			</Size>
+		</Container>
+
+		<!-- Le template configCheckbox -->
+
+		<configCheckbox name="btn_cine_frigost_carrier"
+						text="Afficher les cinématiques des transporteurs de Frigost"
+						uri="[local.assets]tx_light_checkbox" />
+		<configCheckbox name="btn_cine_scaraport"
+						text="Afficher les cinématiques des scaeroports"
+						uri="[local.assets]tx_light_checkbox" />
+		<configCheckbox name="btn_cine_mine"
+						text="Afficher les cinématiques de changement de mine"
+						uri="[local.assets]tx_light_checkbox" />
+		<configCheckbox name="btn_cine_imp"
+						text="Afficher les cinématiques des transporteurs Brigandin"
+						uri="[local.assets]tx_light_checkbox" />
+	</Container>
+</Definition>
