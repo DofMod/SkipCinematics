@@ -4,8 +4,8 @@
     "author": "Yseult",
     "contributors": ["Relena"],
     "url": "https://github.com/DofMod/SkipCinematics/releases/download/v2.11_1.0/SkipCinematics_2.11_1.0.zip",
-    "description": "An improved Smithmagic interface",
-    "category": "GUI, Forgemagie",
+    "description": "This module allow you to automaticaly skip cinematics",
+    "category": "Cinematic",
     "version": "1.0",
     "dofusVersion": "2.11",
     "lastUpdateDate": "2013-07-08"

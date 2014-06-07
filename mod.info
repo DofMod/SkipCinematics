@@ -4,8 +4,8 @@
     "author": "${author}",
     "contributors": ${contributors},
     "url": "https://github.com/DofMod/${name}/releases/download/${tag}/${filename}.zip",
-    "description": "An improved Smithmagic interface",
-    "category": "GUI, Forgemagie",
+    "description": "This module allow you to automaticaly skip cinematics",
+    "category": "Cinematic",
     "version": "${version}",
     "dofusVersion": "${dofusVersion}",
     "lastUpdateDate": "${date}"
